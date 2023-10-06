@@ -10,12 +10,12 @@ const router = createBrowserRouter([{
   element: <App/>,
   children: [{
     path: "/",
-    element: <Home/>
+    element: <Home/>,
   }]
 }])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
